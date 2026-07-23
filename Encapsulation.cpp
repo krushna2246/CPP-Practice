@@ -8,13 +8,14 @@ class ClassA
 public:
     int meth1(int in)
     {
-        int num=in;
-        int count=0;
-        while(num>0){
-            num/=10;
+        int num = in;
+        int count = 0;
+        while (num > 0)
+        {
+            num /= 10;
             count++;
         }
-        if (count==4 && in < 10000)
+        if (count == 4 && in < 10000)
         {
             this->pin = in;
         }
